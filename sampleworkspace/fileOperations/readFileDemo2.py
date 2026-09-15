@@ -1,0 +1,10 @@
+def read_existing_file_content2(filename):
+    try:
+        file=open(filename, 'r')
+        for line in file.readlines():
+            print(line, end="")
+    except IOError as e:
+        print("There is a error occured during opening a File ",e)
+    finally:
+        file.close()
+read_existing_file_content2("C:/Important Folder/PythonPlaywrightTrainingPgudi/Files/Test.txt")
