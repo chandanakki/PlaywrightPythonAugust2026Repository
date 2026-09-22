@@ -12,13 +12,52 @@ def multiplication(x,y):
     result=(x * y)
     print("Multiplication Result :",result)
  
-def division(x,y):
-    try:
-        result=(x / y)
-        print("Division Result :",result)
-    except ZeroDivisionError as e:
-        print("Zero Division Error has Occured :",e)
- 
+# def division(x,y):
+#     try:
+#         result=(x / y)
+#         print("Division Result :",result)
+#     except ZeroDivisionError as e:
+#         print("Zero Division Error has Occured :",e)
+
+
+# #Case 1: Exception class used in the Except block must match with Exception thrown by the try block then only it handles the Exception
+# def division(x,y):
+#     try:
+#         result=(x / y)
+#         print("Division Result :",result)
+#     except ImportError as e:
+#         print("Zero Division Error has Occured :",e)
+
+# #Case 2: If except block has Exception class , Does it handle the exception thrown by the try block.
+# #answer : Yes, Since Exception is a super class , It can handle all sub class Exceptions.
+# def division(x,y):
+#     try:
+#         result=(x / y)
+#         print("Division Result :",result)
+#     except Exception as e:
+#         print("Zero Division Error has Occured :",e)
+
+# #Case 3: 3. finally Block:
+# #It is an optional block, Irrespective of Exception raised or not , This block Execute always. So the cleanup code we should specify in Finally Block.
+
+# def division(x,y):
+#     try:
+#         result=(x / y)
+#         print("Division Result :",result)
+#     except Exception as e:
+#         print("Zero Division Error has Occured :",e)
+#     finally:
+#         print("This statement execute Always !!!!")
+
+#Special Case : try block is directly followed by finally block (except block is missing), does it works in Python.
+
+# def division(x,y):
+#     try:
+#         result=(x / y)
+#         print("Division Result :",result)
+#     finally:
+#         print("This statement execute Always !!!!")
+
 def verify_even_number(num):
     if(num % 2 == 0):
         print(num, " is a Even Number")
