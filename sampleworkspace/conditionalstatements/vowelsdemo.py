@@ -1,4 +1,5 @@
-character="E"
+#character="E"
+character = input("Enter the Character:")
 
 match character:
     case "A" | "E" | "I" | "O" | "U":
